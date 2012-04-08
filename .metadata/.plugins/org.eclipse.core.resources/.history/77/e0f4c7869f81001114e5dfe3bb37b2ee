@@ -1,0 +1,12 @@
+package br.com.feob.cadastro;
+
+import javax.swing.JFrame;
+
+public class PlanoContas extends JFrame{
+
+	
+	public PlanoContas() {
+		
+	}
+	
+}

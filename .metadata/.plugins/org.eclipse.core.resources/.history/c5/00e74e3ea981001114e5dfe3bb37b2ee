@@ -1,0 +1,86 @@
+package br.com.feob.cadastro;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+
+public class PlanoContas extends JFrame{
+
+	/**
+	 * Arrays
+	 * 
+	 * */
+	private String[] column = {"Conta", "Descrição", "Tipo", "Ação"};
+	private String[][] planoContas = {
+										{"01.01.01", "Caixa", "Analítica"},
+										{"01.01.01", "Caixa", "Analítica"}
+									};
+	
+	/**
+	 * Componentes
+	 * 
+	 * */
+	private JLabel lbPlanoContas = new JLabel("Plano de contas", JLabel.LEFT_ALIGNMENT);
+	private JLabel lbConta = new JLabel("Conta");
+	private JLabel lbDescricao = new JLabel("Descrição");
+	private JLabel lbTipoConta = new JLabel("Tipo conta");
+	private JLabel lbNivel = new JLabel("Nível");
+	private JTextField txtConta = new JTextField();
+	private JTextField txtDescricao = new JTextField();
+	private JComboBox<String> cbTipoConta = new JComboBox<String>();
+	private JRadioButton rbAnalitica = new JRadioButton();
+	private JRadioButton rbSintetica = new JRadioButton();
+	private JButton btnSalvar = new JButton("Salvar");
+	private JButton btnEditar = new JButton("Editar");
+	private JButton btnCancelar = new JButton("Cancelar");
+	
+	private JTable tbPlanoContas = new JTable();
+	private JScrollPane spPlanoContas = new JScrollPane(tbPlanoContas);
+	
+	private JPanel pnForm = new JPanel();
+	private JPanel pnTable = new JPanel();
+	
+	
+	/**
+	 * Constructor
+	 * 
+	 * */
+	public PlanoContas() {
+		this.setTitle("Plano de contas");
+		this.setSize(500, 500);
+		this.setLayout(new GridLayout(2,1));
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		tbPlanoContas.setModel(new DefaultTableModel(
+	            new Object [][] {{}},
+	                new String [] {
+	                    "Conta", "Descrição", "Tipo Conta", "Ação"
+	                }
+	            ));
+		
+		tbPlanoContas.setSize(350, 400);
+		tbPlanoContas.setShowGrid(true);
+		tbPlanoContas.setShowVerticalLines(true);
+		tbPlanoContas.setShowHorizontalLines(true);
+		tbPlanoContas.setGridColor(new Color(204,204,204));
+		
+		pnTable.setLayout(new FlowLayout());
+		pnTable.add(lbPlanoContas);
+		pnTable.add(spPlanoContas);
+		
+		this.add(pnTable);
+		this.setVisible(true);
+		
+	}	
+}

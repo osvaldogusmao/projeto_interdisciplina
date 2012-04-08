@@ -1,0 +1,18 @@
+package br.com.feob.cadastro;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class PlanoContas extends JFrame{
+
+	
+	private JLabel planoContas = new JLabel("Plano de contas");
+	private 
+	
+	
+	
+	public PlanoContas() {
+		
+	}
+	
+}
