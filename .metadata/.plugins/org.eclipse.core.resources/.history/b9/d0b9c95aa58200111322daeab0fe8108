@@ -1,0 +1,58 @@
+package br.com.feob.principal;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+import br.com.feob.cadastro.PlanoContas;
+
+public class Menu extends JFrame implements ActionListener{
+
+	
+	public Menu() {
+		
+		Toolkit toolkit = Toolkit.getDefaultToolkit();
+		Dimension dimension = toolkit.getScreenSize();
+
+		JMenu mCadastro = new JMenu("Cadastro");
+		JMenuItem miPlanoContas = new JMenuItem("Plano de Contas");
+		miPlanoContas.setName("planoContas");
+		mCadastro.add(miPlanoContas);
+		miPlanoContas.addActionListener(this);
+
+		JMenu mLancamento = new JMenu("Lançamentos");
+		JMenuItem miLancamento = new JMenuItem("Saldos das contas");
+		miLancamento.setName("saldoContas");
+		mLancamento.add(miLancamento);
+		miLancamento.addActionListener(this);
+		
+		JMenu mSistema = new JMenu("Sistema");
+		JMenuItem miSair = new JMenuItem("Sair");
+		miSair.setName("Sair");
+		miSair.addActionListener(this);
+
+		JMenuBar menuBar = new JMenuBar();
+		menuBar.add(mCadastro);
+		menuBar.add(mLancamento);
+		menuBar.add(mSair);
+
+		this.setJMenuBar(menuBar);
+		this.setSize((int)dimension.getWidth(), (int)dimension.getHeight());
+		this.setVisible(true);
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		System.out.println(e);
+		
+	}	
+}

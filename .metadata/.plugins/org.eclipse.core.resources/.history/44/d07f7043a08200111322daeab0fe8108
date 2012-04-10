@@ -1,0 +1,26 @@
+package br.com.feob.renderer;
+
+import java.awt.Component;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.table.TableCellRenderer;
+
+public class ExcluirRenderer extends JButton implements TableCellRenderer{
+
+	@Override
+	public Component getTableCellRendererComponent(JTable table, Object value,
+			boolean isSelected, boolean hasFocus, int row, int column) {
+		setBorderPainted(false);
+		setIcon(new ImageIcon(getClass().getResource("/assets/images/delete.png")));
+		
+		if (isSelected){
+			JOptionPane.showConfirmDialog( "Deseja realmente excluir este item?", "Exclus‹o", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE);
+		}
+		
+		return this;
+	}
+	
+}
