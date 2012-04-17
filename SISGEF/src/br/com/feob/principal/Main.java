@@ -1,6 +1,6 @@
 package br.com.feob.principal;
 
-import br.com.feob.cadastro.PlanoContas;
+import br.com.feob.planoContas.PlanoContas;
 
 /**
  * Classe principal do projeto
@@ -16,7 +16,7 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+		//new PlanoContas();
 		
 		new Menu();
 	}

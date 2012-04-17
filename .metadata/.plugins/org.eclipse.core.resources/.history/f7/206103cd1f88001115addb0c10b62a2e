@@ -1,0 +1,5 @@
+package br.com.feob.singleton;
+
+public class DadosSistema {
+
+}

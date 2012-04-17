@@ -5,7 +5,6 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -14,16 +13,19 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
-import br.com.feob.cadastro.PlanoContas;
+import br.com.feob.importacao.Importacao;
 import br.com.feob.lookfeel.LookAndFeel;
+import br.com.feob.planoContas.PlanoContas;
 
 public class Menu extends JFrame implements ActionListener {
 
 	private UIManager.LookAndFeelInfo[] looks =  UIManager.getInstalledLookAndFeels();
 	private JMenu mCadastro = new JMenu("Cadastro");
 	private JMenuItem miPlanoContas = new JMenuItem("Plano de Contas");
-	private JMenu mLancamento = new JMenu("Lançamentos");
+	private JMenu mLancamento = new JMenu("LanÁamentos");
 	private JMenuItem miLancamento = new JMenuItem("Saldos das contas");
+	private JMenu mImportacao = new JMenu("ImportaÁ„o");
+	private JMenuItem miImportacaoPlanoContas = new JMenuItem("ImportaÁ„o de Plano de Contas");
 	private JMenu mSistema = new JMenu("Sistema");
 	private JMenuItem miLayout = new JMenuItem("Layout");
 	private JMenuItem miSair = new JMenuItem("Sair");
@@ -38,7 +40,10 @@ public class Menu extends JFrame implements ActionListener {
 
 		mLancamento.add(miLancamento);
 		miLancamento.addActionListener(this);
-
+		
+		mImportacao.add(miImportacaoPlanoContas);
+		miImportacaoPlanoContas.addActionListener(this);
+		
 		//mSistema.add(miLayout);
 		mSistema.add(miSair);
 		miSair.addActionListener(this);
@@ -47,6 +52,7 @@ public class Menu extends JFrame implements ActionListener {
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.add(mCadastro);
 		menuBar.add(mLancamento);
+		menuBar.add(mImportacao);
 		menuBar.add(mSistema);
 
 		this.setJMenuBar(menuBar);
@@ -78,6 +84,9 @@ public class Menu extends JFrame implements ActionListener {
 		}
 		if(e.getSource() == this.miLayout){
 			new LookAndFeel();
+		}
+		if(e.getSource() == this.miImportacaoPlanoContas){
+		    new Importacao();
 		}
 
 	}

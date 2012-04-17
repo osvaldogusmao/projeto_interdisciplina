@@ -1,0 +1,18 @@
+package br.com.feob.singleton;
+
+public class DadosSistema {
+
+    private static DadosSistema instance;
+    private String[][] planoContas;
+    
+    private DadosSistema(){
+	
+	
+	
+    }
+    
+    public static DadosSistema getIstance(){
+	return instance;
+    }
+    
+}

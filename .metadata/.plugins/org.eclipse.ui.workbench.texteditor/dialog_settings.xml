@@ -13,7 +13,10 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
+		<item value="rbAnalitica" key="selection"/>
 		<list key="findhistory">
+			<item value="rbAnalitica"/>
+			<item value="package br.com.feob.renderer;"/>
 			<item value="package br.com.feob.cadastro;"/>
 		</list>
 		<list key="replacehistory">

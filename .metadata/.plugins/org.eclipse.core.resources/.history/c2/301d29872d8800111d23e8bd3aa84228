@@ -1,0 +1,39 @@
+package br.com.feob.singleton;
+
+public class DadosSistema {
+
+    private static DadosSistema instance = new DadosSistema();
+    private String[][] planoContas;
+    private String[][] colunasPlanoContas;
+    
+    /**
+     * Getter and Setter
+     * 
+     * */
+    public String[][] getPlanoContas() {
+	return planoContas;
+    }
+
+    public void setPlanoContas(String[][] planoContas) {
+	this.planoContas = planoContas;
+    }
+    
+    /**
+     * 
+     * Constructor
+     * 
+     * */
+    private DadosSistema(){
+	
+    }
+    
+    /**
+     * 
+     * getInstance()
+     * 
+     * */
+    public static DadosSistema getIstance(){
+	return instance;
+    }
+    
+}
