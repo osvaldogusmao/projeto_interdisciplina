@@ -1,3 +1,4 @@
-#Thu Apr 12 22:17:38 BRT 2012
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="e.getSource()"/>\n</watchExpressions>\n
+#Thu May 03 21:39:18 BRT 2012
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="planoConta"/>\n<expression enabled\="true" text\="item"/>\n<expression enabled\="true" text\="dadosSistemas"/>\n</watchExpressions>\n
 eclipse.preferences.version=1
+org.eclipse.debug.core.PREF_BREAKPOINT_MANAGER_ENABLED_STATE=true

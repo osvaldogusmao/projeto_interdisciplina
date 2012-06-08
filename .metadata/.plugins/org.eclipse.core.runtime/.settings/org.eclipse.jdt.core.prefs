@@ -1,4 +1,4 @@
-#Wed Apr 11 20:21:55 BRT 2012
+#Tue Apr 24 22:10:23 BRT 2012
 org.eclipse.jdt.core.formatter.alignment_for_arguments_in_annotation=0
 org.eclipse.jdt.core.formatter.brace_position_for_enum_constant=end_of_line
 org.eclipse.jdt.core.formatter.join_lines_in_comments=true
@@ -149,7 +149,7 @@ org.eclipse.jdt.core.formatter.comment.clear_blank_lines_in_javadoc_comment=fals
 org.eclipse.jdt.core.formatter.format_line_comment_starting_on_first_column=true
 org.eclipse.jdt.core.formatter.insert_space_after_opening_paren_in_try=do not insert
 org.eclipse.jdt.core.formatter.blank_lines_before_first_class_body_declaration=0
-org.eclipse.jdt.core.formatter.lineSplit=80
+org.eclipse.jdt.core.formatter.lineSplit=150
 org.eclipse.jdt.core.formatter.insert_space_between_empty_parens_in_enum_constant=do not insert
 org.eclipse.jdt.core.formatter.insert_space_after_question_in_conditional=insert
 org.eclipse.jdt.core.formatter.insert_space_before_closing_paren_in_if=do not insert

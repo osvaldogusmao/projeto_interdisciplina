@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="DialogBounds_SearchDialog">
-		<item value="577" key="DIALOG_WIDTH"/>
+		<item value="717" key="DIALOG_WIDTH"/>
 		<item value="187" key="DIALOG_Y_ORIGIN"/>
-		<item value="435" key="DIALOG_HEIGHT"/>
 		<item value="364" key="DIALOG_X_ORIGIN"/>
+		<item value="303" key="DIALOG_HEIGHT"/>
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="Search">
@@ -13,12 +13,18 @@
 			<item value="org.eclipse.mylyn.tasks.ui.search.page"/>
 			<item value="org.eclipse.egit.ui.commitSearchPage"/>
 			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
+			<item value="org.eclipse.rse.internal.files.ui.search.searchPage"/>
+			<item value="org.eclipse.wst.jsdt.ui.JavaSearchPage"/>
+			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
 		</list>
 		<list key="Search.enabledPageIds">
 			<item value="org.eclipse.search.internal.ui.text.TextSearchPage"/>
 			<item value="org.eclipse.mylyn.tasks.ui.search.page"/>
 			<item value="org.eclipse.egit.ui.commitSearchPage"/>
 			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
+			<item value="org.eclipse.rse.internal.files.ui.search.searchPage"/>
+			<item value="org.eclipse.wst.jsdt.ui.JavaSearchPage"/>
+			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
 		</list>
 	</section>
 </section>
