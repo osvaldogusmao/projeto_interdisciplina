@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="LancamentoTableModel" key="selection"/>
+		<item value="sorter" key="selection"/>
 		<list key="findhistory">
-			<item value="lancamentoTableModel"/>
-			<item value="planoContasTableModel"/>
-			<item value="fileOpen"/>
-			<item value="javax.swing."/>
-			<item value="setItemSelected"/>
-			<item value="dadosSistemas"/>
-			<item value="rbAnalitica"/>
-			<item value="package br.com.feob.renderer;"/>
+			<item value="sorter"/>
+			<item value="indice2011"/>
+			<item value="lancamentosValidados"/>
+			<item value="rowSelected"/>
+			<item value="Window"/>
+			<item value="Type"/>
+			<item value="Tyoe"/>
+			<item value="miVisualizacaoIndices"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

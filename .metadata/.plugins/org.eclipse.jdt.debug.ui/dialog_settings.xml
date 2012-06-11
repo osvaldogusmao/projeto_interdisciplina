@@ -5,9 +5,13 @@
 	<item value="1" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn"/>
 	<item value="71" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth2"/>
 	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
-		<item value="500" key="SashWeightDetails"/>
-		<item value="500" key="SashWeightTree"/>
+		<item value="140" key="SashWeightDetails"/>
+		<item value="859" key="SashWeightTree"/>
 		<item value="156" key="HEIGHT"/>
 		<item value="600" key="WIDTH"/>
+	</section>
+	<section name="conditionHistory">
+		<item value="1" key="conditionHistoryEntryCount"/>
+		<item value="indice.getAno() == 2011" key="conditionHistoryEntry_0"/>
 	</section>
 </section>

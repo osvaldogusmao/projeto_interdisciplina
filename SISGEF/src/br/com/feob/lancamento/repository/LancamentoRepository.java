@@ -4,10 +4,10 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.List;
 
+import br.com.feob.Enum.GrupoConta;
 import br.com.feob.lancamento.Lancamento;
 import br.com.feob.singleton.DadosSistema;
 import br.com.feob.singleton.Item;
-import br.com.feob.util.GrupoConta;
 
 public class LancamentoRepository {
 
@@ -41,7 +41,7 @@ public class LancamentoRepository {
      * Metodos de totalização dos lançamentos
      * 
      * */
-    public Double getTotalConta(int ano, GrupoConta conta) {
+    public Double getTotalContaPrimeiroNivel(int ano, GrupoConta conta) {
 
 	Double totalConta = 0.00;
 	String grupo = getGrupoConta(conta);
@@ -56,6 +56,51 @@ public class LancamentoRepository {
 	return totalConta;
     }
 
+    public Double getTotalContaSegundoNivel(int ano, GrupoConta conta) {
+
+	Double totalConta = 0.00;
+	String grupo = getGrupoConta(conta);
+
+	for (Lancamento lancamento : this.lancamentos) {
+
+	    if (lancamento.getAno() == ano && lancamento.getConta().substring(0, 5).equals(grupo)) {
+		totalConta = totalConta + lancamento.getSaldo();
+
+	    }
+	}
+	return totalConta;
+    }
+    
+    public Double getTotalContaTerceiroNivel(int ano, GrupoConta conta) {
+
+	Double totalConta = 0.00;
+	String grupo = getGrupoConta(conta);
+
+	for (Lancamento lancamento : this.lancamentos) {
+
+	    if (lancamento.getAno() == ano && lancamento.getConta().substring(0, 8).equals(grupo)) {
+		totalConta = totalConta + lancamento.getSaldo();
+
+	    }
+	}
+	return totalConta;
+    }
+
+    public Double getTotalContaQuartoNivel(int ano, GrupoConta conta) {
+
+	Double totalConta = 0.00;
+	String grupo = getGrupoConta(conta);
+
+	for (Lancamento lancamento : this.lancamentos) {
+
+	    if (lancamento.getAno() == ano && lancamento.getConta().equals(grupo)) {
+		totalConta = totalConta + lancamento.getSaldo();
+
+	    }
+	}
+	return totalConta;
+    }
+    
     private String getGrupoConta(GrupoConta grupoConta) {
 
 	for (Item item : grupoContas) {

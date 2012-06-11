@@ -1,7 +1,12 @@
 package br.com.feob.configuracao;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.awt.GridLayout;
+import java.awt.Insets;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -10,7 +15,9 @@ import javax.swing.GroupLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
@@ -20,7 +27,7 @@ import br.com.feob.singleton.DadosSistema;
 import br.com.feob.singleton.Item;
 import br.com.feob.util.Util;
 
-public class FrmConfiguracao extends JPanel implements ActionListener {
+public class FrmConfiguracao extends JFrame implements ActionListener {
 
     /**
      * 
@@ -76,14 +83,24 @@ public class FrmConfiguracao extends JPanel implements ActionListener {
 	 * Configuração
 	 * 
 	 * */
-	this.setLayout(new BorderLayout());
+	
+	Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+	
+	super.setTitle("Configurações de conta");
+	super.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+	super.getContentPane().setLayout(new GridBagLayout());
+	super.setResizable(false);
+	super.setSize(320, 350);
+	this.setLocation((int) (dimension.getWidth() - this.getWidth()) / 2, (int) (dimension.getHeight() - this.getHeight()) / 2);
+	
+	GridBagConstraints gridBagConstraints;
+	
 	pnConfConta.setLayout(new BorderLayout());
 	pnConfNivel.setLayout(new BorderLayout());
-	this.setBorder(BorderFactory.createEmptyBorder(5,5,5,5));
-	
 	
 	tabbedPane.addTab("Configuração Conta", pnConfConta);
 	tabbedPane.addTab("Configuração Níveis", pnConfNivel);
+	tabbedPane.setSize(80, 200);
 	/**
 	 * 
 	 * Components
@@ -128,7 +145,7 @@ public class FrmConfiguracao extends JPanel implements ActionListener {
 	panelFdGrupo.add(txtGrupoPL);
 	panelFdGrupo.add(txtGrupoResultado);
 	
-	pnConfConta.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
+	pnConfConta.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
 	pnConfConta.add(panelLbGrupo, BorderLayout.WEST);
 	pnConfConta.add(panelFdGrupo, BorderLayout.LINE_END);
 	
@@ -151,9 +168,10 @@ public class FrmConfiguracao extends JPanel implements ActionListener {
 	panelFdNivel.add(txtEstoque);
 	panelFdNivel.add(txtContasReceber);
 	
-	pnConfNivel.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
+	pnConfNivel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
 	pnConfNivel.add(panelLbNivel, BorderLayout.WEST);
 	pnConfNivel.add(panelFdNivel, BorderLayout.LINE_END);
+
 	
 	/**
 	 * 
@@ -164,9 +182,18 @@ public class FrmConfiguracao extends JPanel implements ActionListener {
 	pnButtons.add(btnSalvar);
 	//pnButtons.add(btnCancelar);
 	//pnButtons.add(btnDeletar);
-
-	this.add(tabbedPane, BorderLayout.NORTH);
-	this.add(pnButtons, BorderLayout.SOUTH);
+	
+	gridBagConstraints = new GridBagConstraints();
+	gridBagConstraints.gridx = 0;
+	gridBagConstraints.gridy = 0;
+	gridBagConstraints.ipadx = 200;
+	gridBagConstraints.ipady = 50;
+	gridBagConstraints.insets = new Insets(5, 5, 5, 5);
+	gridBagConstraints.anchor = GridBagConstraints.NORTHWEST;
+	getContentPane().add(tabbedPane, gridBagConstraints);
+	
+	pack();
+	
     }
 
     @Override

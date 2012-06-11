@@ -1,6 +1,6 @@
 package br.com.feob.singleton;
 
-import br.com.feob.util.GrupoConta;
+import br.com.feob.Enum.GrupoConta;
 
 public class Item {
 

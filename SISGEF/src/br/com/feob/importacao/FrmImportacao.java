@@ -14,6 +14,7 @@ import java.io.InputStreamReader;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -31,7 +32,7 @@ import br.com.feob.singleton.DadosSistema;
 public class FrmImportacao extends JFrame implements ActionListener {
 
     private JLabel lbPath = new JLabel("Caminho");
-    private JTextField txtFilePath = new JTextField(30);
+    private JTextField txtFilePath = new JTextField(22);
     private JButton btnProcurar = new JButton("...");
     private JButton btnImportar = new JButton("Importar");
     private JButton btnCancelar = new JButton("Fechar");
@@ -46,14 +47,14 @@ public class FrmImportacao extends JFrame implements ActionListener {
     private JRadioButton rbPlanoContas = new JRadioButton("Plano de Contas");
     private JRadioButton rbLancamentos = new JRadioButton("Lançamentos");
     private ButtonGroup buttonGroupLayout = new ButtonGroup();
-
+    
     public FrmImportacao() {
 
 	Toolkit toolkit = Toolkit.getDefaultToolkit();
 	Dimension dimension = toolkit.getScreenSize();
 
 	this.setTitle("Importação de Plano de Contas");
-	this.setSize(470, 150);
+	this.setSize(450, 150);
 	this.setLayout(new GridLayout(3, 2));
 	this.setMaximumSize(new Dimension(450, 100));
 	this.setMinimumSize(new Dimension(450, 100));
@@ -132,6 +133,8 @@ public class FrmImportacao extends JFrame implements ActionListener {
 		dadosSistemas.addLancamento(lancamento);
 		line = bufferedReader.readLine();
 	    }
+	    
+	    dadosSistemas.setCodigoLancamentoImportacao(dadosSistemas.getMaiorValor());
 	}
 
 	bufferedReader.close();
@@ -177,4 +180,5 @@ public class FrmImportacao extends JFrame implements ActionListener {
 	    this.dispose();
 	}
     }
+    
 }

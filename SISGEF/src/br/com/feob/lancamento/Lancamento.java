@@ -50,6 +50,9 @@ public class Lancamento {
 	
 	for(PlanoConta planoConta : planoContas){
 	    
+	   if(planoConta.getConta().equals(this.getConta())){
+	       return planoConta.getDescricao();
+	   }
 	}
 	return null;
     }
