@@ -59,7 +59,7 @@ public class FrmMenu extends JFrame implements ActionListener {
 
 	ImagePanel background = new ImagePanel(new ImageIcon(getClass().getResource("/assets/images/bg_finance.jpg")).getImage());
 	super.setContentPane(background);
-	super.setResizable(false);
+	//super.setResizable(false);
 
 	mCadastro.add(miPlanoContas);
 	miPlanoContas.addActionListener(this);

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
-		<item value="true" key="ShowStatusLine"/>
 		<item value="false" key="ShowDerived"/>
+		<item value="true" key="ShowStatusLine"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/planoContas/PlanoConta.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/planoContas/FrmConsultaPlanoContas.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/planoContas/PlanoContasTableModel.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/importacao/FrmImportacao.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/singleton/DadosSistema.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/lancamento/LancamentoTableModel.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/planoContas/FrmPlanoContas.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/lancamento/FrmValidarLancamento.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/indices/IndicesTableModel.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/principal/ForTest.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/principal/FrmMain.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/principal/FrmMenu.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/indices/FrmIndices.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/util/DecimalRenderer.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/lancamento/FrmLancamento.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/planoContas/PlanoConta.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/planoContas/FrmConsultaPlanoContas.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/planoContas/PlanoContasTableModel.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/importacao/FrmImportacao.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/singleton/DadosSistema.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/lancamento/LancamentoTableModel.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/planoContas/FrmPlanoContas.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/lancamento/FrmValidarLancamento.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/indices/IndicesTableModel.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/principal/ForTest.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/principal/FrmMain.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/util/DecimalRenderer.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/indices/FrmIndices.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/lancamento/FrmLancamento.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SISGEF/src/br/com/feob/principal/FrmMenu.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
 			<item value="600" key="DIALOG_WIDTH"/>
 			<item value="56" key="DIALOG_Y_ORIGIN"/>
-			<item value="500" key="DIALOG_HEIGHT"/>
 			<item value="315" key="DIALOG_X_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
 			<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
@@ -18,8 +18,8 @@
 	<section name="CleanDialogSettings">
 		<item value="484" key="DIALOG_WIDTH"/>
 		<item value="214" key="DIALOG_Y_ORIGIN"/>
-		<item value="354" key="DIALOG_HEIGHT"/>
 		<item value="-1042" key="DIALOG_X_ORIGIN"/>
+		<item value="354" key="DIALOG_HEIGHT"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
 	</section>
 </section>
